@@ -88,7 +88,7 @@ h3 {
     background-color: #353535;
 }
 
-.nav__enlace{
+.nav__enlace {
     color: var(--blanco);
 }
 
@@ -99,10 +99,10 @@ h3 {
 
     .nav--lg {
         display: flex;
-        background-color: transparent;                
-    }    
+        background-color: transparent;
+    }
 
-    .nav__enlace{
+    .nav__enlace {
         color: var(--grisOscuro);
     }
 }
@@ -119,7 +119,7 @@ h3 {
     font-weight: 700;
 }
 
-.header__utilidades{
+.header__utilidades {
     display: flex;
     gap: 2rem;
 }
@@ -129,7 +129,8 @@ h3 {
 }
 
 .title-svg:hover {
-    cursor: pointer; /* Cambia el cursor al pasar sobre el svg */
+    cursor: pointer;
+    /* Cambia el cursor al pasar sobre el svg */
 }
 
 /* - Oferta -*/
@@ -145,13 +146,13 @@ h3 {
     font-size: 1.5rem;
 }
 
-.oferta__contenido a{
+.oferta__contenido a {
     text-decoration: underline;
     font-weight: 700;
 }
 
 /* - Hero - */
-.hero{
+.hero {
     background-image: url(../img/hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -159,23 +160,23 @@ h3 {
     height: 60rem;
 }
 
-.hero__contenido{
+.hero__contenido {
     width: 100%;
     height: 100%;
     background: rgb(0 0 0 / 70%);
     display: flex;
     flex-direction: column;
-    justify-content: center; 
+    justify-content: center;
     align-items: flex-start;
-    padding: 0 3rem;   
+    padding: 0 3rem;
 }
 
-.hero__titulo{
+.hero__titulo {
     text-transform: uppercase;
     font-size: 8rem;
 }
 
-.hero__texto{
+.hero__texto {
     font-size: 2rem;
     margin: 0;
     background-color: var(--verde);
@@ -185,6 +186,58 @@ h3 {
 }
 
 .hero__titulo,
-.hero__texto{
+.hero__texto {
+    color: var(--blanco);
+}
+
+
+/* - Footer -*/
+.footer {
+    background-color: var(--grisOscuro);
+    padding: 2rem 0;
+}
+
+.nav-footer {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+}
+
+.nav-footer__enlace {
+    color: var(--blanco);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;    
+}
+
+.nav-footer__enlace:last-child {
+    border-right: none;
+}
+
+@media (min-width: 468px) {
+    .nav-footer {
+        display: flex;
+        
+    }
+
+    .nav-footer__enlace {
+        border-right: solid .1rem var(--blanco);
+        padding: 0 1rem;
+    }
+}
+
+.footer-redes{
+    margin-top: 2rem;
+}
+
+.footer-redes__iconos{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.footer__texto {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.5rem;
     color: var(--blanco);
 }
