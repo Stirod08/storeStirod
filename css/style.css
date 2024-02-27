@@ -27,7 +27,7 @@ body {
 
 /* - Globales -*/
 img {
-    width: 100%;
+    max-width: 100%;
 }
 
 a {
@@ -137,7 +137,7 @@ h3 {
 .oferta {
     background-color: #007BFF;
     text-align: center;
-    padding: 1.5rem 0;
+    padding: .5rem 0;
 }
 
 .oferta__contenido,
@@ -190,6 +190,58 @@ h3 {
     color: var(--blanco);
 }
 
+/* - Main Index - */
+.main{
+    margin: 2rem auto;
+}
+
+.main__titulo{
+    margin: 2rem 0;
+}
+
+.grid-productos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .grid-productos{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+
+/* - Productos - */
+.producto{
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.30);
+    border-radius: .5rem;
+}
+
+.producto__imagen{
+    width: 100%;    
+}
+
+.producto__informacion{
+}
+
+.producto__nombre{
+    font-weight: 700;
+    color: var(--azul);
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.producto__precio{
+    font-size: 1.2rem;
+    color: var(--grisOscuro);
+}
+
+.producto__nombre,
+.producto__precio {
+    padding-left: 1rem;
+}
 
 /* - Footer -*/
 .footer {
