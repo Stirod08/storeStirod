@@ -23,6 +23,9 @@ html {
 body {
     font-family: var(--fuente);
     background-color: var(--blanco);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 /* - Globales -*/
@@ -344,10 +347,100 @@ h3 {
     text-align: left;
 }
 
+
+/* - Producto - */
+.titulo-producto {
+    margin-top: 2rem;
+}
+
+.camisa {
+    margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+    .camisa{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.oferta--producto {
+    background-color: var(--verde);
+}
+
+.oferta-producto {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.contenido__marca,
+.contenido__item {
+    color: var(--grisClaro);
+    font-size: 1rem;
+    text-align: left;
+    margin: .2rem;
+}
+
+.contenido__nombre-camisa{
+    color: var(--azul);
+    font-size: 2rem;
+    margin: 0;
+    font-weight: 700;
+}
+
+.contenido__precio,
+.contenido__talla{
+    color: var(--grisOscuro);
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.tallas{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);   
+}
+
+.talla{
+    margin: 0;
+    border: solid .1rem var(--grisOscuro);
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.talla:hover{
+    background-color: var(--grisOscuro);
+    color: var(--blanco);
+    cursor: pointer;
+}
+
+.boton {
+    background-color: var(--verde);
+    display: inline-block;
+    margin: 2rem 0;
+    padding: 1rem 2rem;
+    color: var(--blanco);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-radius: .5rem;
+    grid-column: 1 / 5;
+    text-align: center;
+}
+
+.boton:hover {
+    background-color: #01a043;
+}
+
+
+
 /* - Footer -*/
 .footer {
     background-color: var(--grisOscuro);
     padding: 2rem 0;
+    margin-top: auto;
 }
 
 .nav-footer {
